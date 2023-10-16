@@ -1,0 +1,1 @@
+create sequence if not exists dictionary.cabinet_cabinet_id_seq as smallint start with 1;
