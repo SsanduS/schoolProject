@@ -1,0 +1,1 @@
+create sequence if not exists dictionary.role_role_id_seq as smallint start with 1;
