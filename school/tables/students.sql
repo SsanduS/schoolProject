@@ -9,6 +9,6 @@ CREATE TABLE IF NOT EXISTS school.students
     gender         char(1)     NOT NULL,
     IsActive       boolean     NOT NULL,
     ch_employee_ID int         NOT NULL,
-    ch_dt          date        NOT NULL,
+    ch_dt          timestamptz       NOT NULL,
     CONSTRAINT PK_Student PRIMARY KEY (students_ID)
 );

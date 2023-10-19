@@ -13,6 +13,6 @@ CREATE TABLE IF NOT EXISTS school.employees
     status_id      int            NOT NULL,
     subjectTeach   smallint,
     ch_employee_ID int            NOT NULL,
-    ch_dt          date           NOT NULL,
+    ch_dt          timestamptz           NOT NULL,
     CONSTRAINT PK_employee PRIMARY KEY (Employees_ID)
 );

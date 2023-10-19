@@ -9,6 +9,6 @@ CREATE TABLE IF NOT EXISTS school.TimeLesson
     teacher_id     smallint NOT NULL,
     dt             date     NOT NULL,
     ch_employee_ID int      NOT NULL,
-    ch_dt          date     NOT NULL,
+    ch_dt          timestamptz    NOT NULL,
     CONSTRAINT PK_TimeLesson PRIMARY KEY (Lesson_ID)
 );

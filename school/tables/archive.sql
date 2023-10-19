@@ -1,7 +1,9 @@
 CREATE TABLE IF NOT EXISTS school.archive
 (
-    archive_ID  int  NOT NULL,
-    students_id int  NOT NULL,
-    transferDt  date NOT NULL,
+    archive_ID     int         NOT NULL,
+    students_id    int         NOT NULL,
+    transferDt     date        NOT NULL,
+    ch_employee_ID int         NOT NULL,
+    ch_dt          timestamptz NOT NULL,
     CONSTRAINT PK_archive PRIMARY KEY (archive_ID)
 );
