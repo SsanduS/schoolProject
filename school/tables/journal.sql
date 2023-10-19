@@ -2,7 +2,6 @@ CREATE TABLE IF NOT EXISTS school.journal
 (
     journal_ID     int      NOT NULL,
     student_id     int      NOT NULL,
-    employees_id   smallint NOT NULL,
     lesson_id      Bigint   NOT NULL,
     grade          smallint NOT NULL,
     ch_employee_ID int      NOT NULL,
