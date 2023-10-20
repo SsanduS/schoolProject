@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS dictionary.class
     CONSTRAINT PK_class PRIMARY KEY (class_ID)
 );
 
-INSERT INTO dictionary.status(statusName)
+INSERT INTO dictionary.class(classname)
 VALUES ('1'),
        ('2А'),
        ('2Б'),
