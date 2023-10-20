@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS dictionary.subject
 (
-    subject_ID  SMALLSERIAL NOT NULL,
-    subjectName varchar(70) NOT NULL,
+    subject_id  SMALLSERIAL NOT NULL,
+    subjectname varchar(70) NOT NULL,
     CONSTRAINT PK_subject PRIMARY KEY (subject_ID)
 );
 

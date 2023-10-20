@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS dictionary.role
 (
-    role_ID  SMALLSERIAL NOT NULL,
-    roleName varchar(40) NOT NULL,
+    role_id  SMALLSERIAL NOT NULL,
+    rolename varchar(40) NOT NULL,
     CONSTRAINT PK_role PRIMARY KEY (role_ID)
 );
 
