@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS school.TimeLesson
 (
-    Lesson_id      BIGINT     NOT NULL,
+    Lesson_id      BIGINT      NOT NULL,
     class_id       SMALLINT    NOT NULL,
     day_id         SMALLINT    NOT NULL,
     lessonNumber   SMALLINT    NOT NULL,
