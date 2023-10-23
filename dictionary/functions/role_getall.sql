@@ -7,6 +7,6 @@ BEGIN
         FROM (SELECT r.role_id,
                      r.rolename
               FROM dictionary.role r
-              WHERE r.role_id=Coalesce(_role_id,r.role_id)) res;
+              WHERE r.role_id=COALESCE(_role_id,r.role_id)) res;
 END
 $$;

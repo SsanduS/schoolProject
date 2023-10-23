@@ -7,6 +7,6 @@ BEGIN
         FROM (SELECT s.subject_id,
                      s.subjectname
               FROM dictionary.subject s
-              WHERE s.subject_id=Coalesce(_subject_id,s.subject_id)) res;
+              WHERE s.subject_id=COALESCE(_subject_id,s.subject_id)) res;
 END
 $$;

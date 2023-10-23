@@ -7,6 +7,6 @@ BEGIN
         FROM (SELECT c.class_id,
                      c.classname
               FROM dictionary.class c
-              WHERE c.class_id=Coalesce(_class_id,c.class_id)) res;
+              WHERE c.class_id=COALESCE(_class_id,c.class_id)) res;
 END
 $$;

@@ -7,6 +7,6 @@ BEGIN
         FROM (SELECT s.status_id,
                      s.statusname
               FROM dictionary.status s
-              WHERE s.status_id=Coalesce(_status_id,s.status_id)) res;
+              WHERE s.status_id=COALESCE(_status_id,s.status_id)) res;
 END
 $$;

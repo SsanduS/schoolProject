@@ -7,6 +7,6 @@ BEGIN
         FROM (SELECT c.cabinet_id,
                      c.cabinetnumber
               FROM dictionary.cabinet c
-              WHERE c.cabinet_id=Coalesce(_cabinet_id,c.cabinet_id)) res;
+              WHERE c.cabinet_id=COALESCE(_cabinet_id,c.cabinet_id)) res;
 END
 $$;

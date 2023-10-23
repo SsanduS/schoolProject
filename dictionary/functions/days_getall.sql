@@ -7,6 +7,6 @@ BEGIN
         FROM (SELECT d.day_id,
                      d.dayname
               FROM dictionary.days d
-              WHERE d.day_id=Coalesce(_day_id,d.day_id)) res;
+              WHERE d.day_id=COALESCE(_day_id,d.day_id)) res;
 END
 $$;
