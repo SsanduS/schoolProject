@@ -5,7 +5,8 @@ as
 $$
 DECLARE
 BEGIN
-    insert into dictionary.status(status_id, statusname)
+    INSERT INTO dictionary.status(status_id,
+                                  statusname)
     SELECT COALESCE(st.status_id, nextval('dictionary.status_status_id_seq')) AS status_id,
            s.statusname
     FROM JSONB_TO_RECORD(_src) AS s (status_id SMALLINT,

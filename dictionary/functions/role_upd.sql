@@ -5,7 +5,8 @@ as
 $$
 DECLARE
 BEGIN
-    INSERT INTO dictionary.role(role_id, rolename)
+    INSERT INTO dictionary.role(role_id,
+                                rolename)
     SELECT COALESCE(r.role_id, nextval('dictionary.role_role_id_seq')) AS role_id,
            s.rolename
     FROM JSONB_TO_RECORD(_src) AS s (role_id SMALLINT,
