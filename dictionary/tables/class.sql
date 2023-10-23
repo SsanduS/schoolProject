@@ -1,11 +1,11 @@
 CREATE TABLE IF NOT EXISTS dictionary.class
 (
-    class_ID  SMALLSERIAL NOT NULL,
-    className varchar(3) NOT NULL,
+    class_id  SMALLSERIAL NOT NULL,
+    classname varchar(3)  NOT NULL,
     CONSTRAINT PK_class PRIMARY KEY (class_ID)
 );
 
-INSERT INTO dictionary.status(statusName)
+INSERT INTO dictionary.class(classname)
 VALUES ('1'),
        ('2А'),
        ('2Б'),

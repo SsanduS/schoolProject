@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS dictionary.status
 (
-    status_ID  SMALLSERIAL NOT NULL,
-    statusName varchar(40) NOT NULL,
+    status_id  SMALLSERIAL NOT NULL,
+    statusname varchar(40) NOT NULL,
     CONSTRAINT PK_status PRIMARY KEY (status_ID)
 );
 
