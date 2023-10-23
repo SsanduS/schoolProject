@@ -4,7 +4,7 @@ CREATE OR REPLACE FUNCTION whsync.students_export(_log_id BIGINT) RETURNS JSONB
 AS
 $$
 DECLARE
-    _dt  TIMESTAMPTZ := now() AT TIME ZONE 'Europe/Moscow';
+    _dt  TIMESTAMPTZ := NOW() AT TIME ZONE 'Europe/Moscow';
     _res JSONB;
 BEGIN
     DELETE
