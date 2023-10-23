@@ -1,1 +1,1 @@
-create sequence if not exists dictionary.days_day_id_seq as smallint start with 1;
+CREATE SEQUENCE IF NOT EXISTS dictionary.days_day_id_seq AS SMALLINT;
