@@ -1,1 +1,1 @@
-create sequence if not exists dictionary.class_class_id_seq as smallint start with 1;
+CREATE SEQUENCE IF NOT EXISTS dictionary.class_class_id_seq AS SMALLINT;

@@ -1,8 +1,8 @@
 CREATE TABLE IF NOT EXISTS dictionary.class
 (
     class_id  SMALLSERIAL NOT NULL,
-    classname varchar(3)  NOT NULL,
-    CONSTRAINT PK_class PRIMARY KEY (class_ID)
+    classname VARCHAR(3)  NOT NULL,
+    CONSTRAINT PK_class PRIMARY KEY (class_id)
 );
 
 INSERT INTO dictionary.class(classname)
