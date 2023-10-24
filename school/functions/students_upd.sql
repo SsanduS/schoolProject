@@ -38,10 +38,24 @@ BEGIN
                                      class_id SMALLINT,
                                      dob DATE,
                                      gender CHAR(1),
-                                     isactive BOOLEAN);
+                                     isactive BOOLEAN)
+             LEFT JOIN school.students s
+                       ON s.students_id = c.students_id;
+
+    IF EXISTS(SELECT 1
+              FROM school.students s
+              WHERE s.surname = _surname
+                AND s.stuname = _stuname
+                AND s.patronymic = _patronymic
+                AND s.dob = _dob)
+    THEN
+        RETURN public.errmessage(_errcode := 'school.students.students_exists',
+                                 _msg := 'Такой студент уже существует',
+                                 _detail := NULL);
+    END IF;
 
     WITH ins AS (
-        INSERT INTO school.students AS cl (students_id,
+        INSERT INTO school.students AS st (students_id,
                                            surname,
                                            stuname,
                                            patronymic,
@@ -62,16 +76,16 @@ BEGIN
                    _ch_employee_id,
                    _ch_dt
             ON CONFLICT (students_id) DO UPDATE
-                SET surname         = excluded.surname,
-                    stuname         = excluded.stuname,
-                    patronymic      = excluded.patronymic,
-                    class_id        = excluded.class_id,
-                    dob             = excluded.dob,
-                    gender          = excluded.gender,
-                    isactive        = excluded.isactive,
-                    ch_employee_id  = excluded.ch_employee_id,
-                    ch_dt           = excluded.ch_dt
-            RETURNING cl.*)
+                SET surname = excluded.surname,
+                    stuname = excluded.stuname,
+                    patronymic = excluded.patronymic,
+                    class_id = excluded.class_id,
+                    dob = excluded.dob,
+                    gender = excluded.gender,
+                    isactive = excluded.isactive,
+                    ch_employee_id = excluded.ch_employee_id,
+                    ch_dt = excluded.ch_dt
+            RETURNING st.*)
 
        , his AS (
         INSERT INTO history.studentschanges (students_id,
