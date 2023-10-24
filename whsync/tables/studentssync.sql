@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS whsync.studentssync
 (
-    log_id         BIGINT                   NOT NULL,
+    log_id         BIGSERIAL                NOT NULL,
     students_id    INT                      NOT NULL
         CONSTRAINT pk_student PRIMARY KEY,
     surname        VARCHAR(35)              NOT NULL,
