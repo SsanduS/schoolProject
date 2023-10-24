@@ -1,0 +1,1 @@
+CREATE SEQUENCE IF NOT EXISTS studentssync_log_id_seq AS BIGINT;
