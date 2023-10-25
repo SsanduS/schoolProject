@@ -26,7 +26,7 @@
 Функция добавления кабинета. Пример заполнения:
 ````
 select dictionary.cabinet_upd('{
-  "cabinetnumber": 34
+  "cabinetname": 34
 }');
 ````
 Пример ответа при правильном выполнении:
@@ -44,55 +44,55 @@ select dictionary.cabinet_getall(NULL);
 "data": [
 	{
 		"cabinet_id": 2,
-		"cabinetnumber": 11
+		"cabinetname": 11
 	},
 	{
 		"cabinet_id": 3,
-		"cabinetnumber": 12
+		"cabinetname": 12
 	},
 	{
 		"cabinet_id": 4,
-		"cabinetnumber": 13
+		"cabinetname": 13
 	},
 	{
 		"cabinet_id": 5,
-		"cabinetnumber": 14
+		"cabinetname": 14
 	},
 	{
 		"cabinet_id": 6,
-		"cabinetnumber": 15
+		"cabinetname": 15
 	},
 	{
 		"cabinet_id": 7,
-		"cabinetnumber": 16
+		"cabinetname": 16
 	},
 	{
 		"cabinet_id": 8,
-		"cabinetnumber": 17
+		"cabinetname": 17
 	},
 	{
 		"cabinet_id": 9,
-		"cabinetnumber": 18
+		"cabinetname": 18
 	},
 	{
 		"cabinet_id": 10,
-		"cabinetnumber": 19
+		"cabinetname": 19
 	},
 	{
 		"cabinet_id": 11,
-		"cabinetnumber": 20
+		"cabinetname": 20
 	},
 	{
 		"cabinet_id": 1,
-		"cabinetnumber": 21
+		"cabinetname": 21
 	},
 	{
 		"cabinet_id": 12,
-		"cabinetnumber": 22
+		"cabinetname": 22
 	},
 	{
 		"cabinet_id": 17,
-		"cabinetnumber": 34
+		"cabinetname": 34
 	}]
 }
 `````
@@ -109,7 +109,7 @@ select dictionary.cabinet_getall(15);
 	"data": [
 	{
 		"cabinet_id": 15,
-		"cabinetnumber": 22
+		"cabinetname": 22
 	}]
 }
 ````
