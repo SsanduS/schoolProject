@@ -1,1 +1,1 @@
-CREATE SEQUENCE IF NOT EXISTS studentschanges_log_id_seq as BIGINT;
+CREATE SEQUENCE IF NOT EXISTS history.studentschanges_log_id_seq as BIGINT;

@@ -1,0 +1,1 @@
+CREATE SEQUENCE IF NOT EXISTS history.timelessonchanges_log_id_seq as BIGINT;
