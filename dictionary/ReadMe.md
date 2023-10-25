@@ -91,10 +91,6 @@ select dictionary.cabinet_getall(NULL);
 		"cabinetnumber": 22
 	},
 	{
-		"cabinet_id": 15,
-		"cabinetnumber": 22
-	},
-	{
 		"cabinet_id": 17,
 		"cabinetnumber": 34
 	}]

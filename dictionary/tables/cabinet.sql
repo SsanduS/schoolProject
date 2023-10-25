@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS dictionary.cabinet
 (
     cabinet_id    SMALLSERIAL NOT NULL,
-    cabinename SMALLINT    NOT NULL,
+    cabineеname SMALLINT    NOT NULL,
     CONSTRAINT PK_cabinet PRIMARY KEY (cabinet_id)
 );
 
